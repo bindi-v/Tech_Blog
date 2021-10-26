@@ -1,3 +1,19 @@
-* {font-family: 'IBM Plex Sans', sans-serif;
-/*font-family: 'Zen Kurenaido', sans-serif; */
+.app-title {font-family: 'IBM Plex Sans', sans-serif;
+
+}
+
+.navbar .li-inline{
+    padding: 30px 0;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    z-index : 999;
+    font-family: 'Zen Kurenaido', sans-serif;
+    display: inline-block;
+}
+.max-width{
+    
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: 0 auto;
 }
