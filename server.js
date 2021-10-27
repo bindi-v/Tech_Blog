@@ -30,6 +30,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.get('', (req, res) => {
+    res.render('login');
+});
+
 app.use(require('./controller/'));
 
 app.listen(PORT, () => {
