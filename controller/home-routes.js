@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const {User, Post} = require("../models/");
+const {User, Post, Comment} = require("../models/");
 
 router.get('/login', (req, res) => {
     if (req.session.loggedIn) {
@@ -37,10 +37,10 @@ router.get('/login', (req, res) => {
       const postData = await Post.findByPk(req.params.id, {
         include: [
           User,
-         // {
-         //   model: Comment,
-         //   include: [User],
-         // },
+          {
+            model: Comment,
+            include: [User],
+          },
         ],
       });
   
