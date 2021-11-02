@@ -1,20 +1,20 @@
 const express = require('express');
-
-const exphbs = require('express-handlebars');
 const path = require('path');
-const sequelize = require('./config/config');
+const exphbs = require('express-handlebars');
 const session = require('express-session');
+const sequelize = require('./config/config');
+const SequelizeStore = require('connect-session-sequelize')(session.Store);
+
+const routes = require("./controller");
+const helpers = require("./utils/helpers");
 
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-const hbs = exphbs.create({ format_date: date => {
-    return `${date.getMonth() + 1}/${date.getDate()}/${date.getFullYear()}`;
-  } });
+const hbs = exphbs.create({ helpers });
 
-app.engine('handlebars', hbs.engine);
-app.set('view engine', 'handlebars');
-const SequelizeStore = require('connect-session-sequelize')(session.Store);
+app.engine("handlebars", hbs.engine);
+app.set("view engine", "handlebars");
 
 const sess = {
   secret: 'Super secret',
@@ -27,16 +27,16 @@ const sess = {
 };
 app.use(session(sess));
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('', (req, res) => {
     res.render('login');
 });
 
-app.use(require('./controller/'));
-
+app.use(routes);
+sequelize.sync({ force: false }).then(() => {
 app.listen(PORT, () => {
-    console.log(`App listening on port ${PORT}!`);
-    sequelize.sync({ force: false });
+    console.log(`App listening on http://localhost:${PORT}!`);
+  });
 });
