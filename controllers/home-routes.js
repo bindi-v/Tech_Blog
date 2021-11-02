@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const {User, Post, Comment} = require("../models/");
+const {User, Post, Comment} = require("../models");
 
 router.get('/login', (req, res) => {
     if (req.session.loggedIn) {
