@@ -37,10 +37,10 @@ router.get('/login', (req, res) => {
       const postData = await Post.findByPk(req.params.id, {
         include: [
           User,
-          {
-            model: Comment,
-            include: [User],
-          },
+         // {
+         //   model: Comment,
+         //   include: [User],
+         // },
         ],
       });
   
