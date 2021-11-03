@@ -1,8 +1,113 @@
-.app-title {font-family: 'IBM Plex Sans', sans-serif;
 
+/*.max-width{
+    
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: 0 auto;
+}*/
+
+.nav-item{
+    display: inline-flex;
+    align-items: center;
 }
 
-.navbar .li-inline{
+:root {
+    --primary: #ccdad1;
+    --secondary: #9caea9;
+    --tertiary: #788585;
+    --light-dark: #6f6866;
+    --dark: rgb(129, 31, 31);
+    --border-radius: 5px;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: rgb(84, 167, 167);
+    margin: 0;
+    padding: 0;
+    font-family: 'Zen Kurenaido', sans-serif;
+    color: #2222;
+    line-height: 1.5;
+    font-size: 16px;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 700;
+    margin: 0;
+    color: #2222;
+    line-height: 1.25;
+  }
+  
+  header {
+    margin-top: 50px;
+  }
+  
+  main {
+    margin: 20px auto;
+    width: 94%;
+  }
+  p {
+    font-size: 20px;
+  }
+  
+  input {
+      width: 100%;
+      border: 1px solid #ccc;
+      background: #FFF;
+      margin: 0 0 5px;
+      padding: 10px;
+  }
+  
+  .card-header h2 {
+    color: var(--primary);
+  }
+  
+  .btn {
+    font-size: 1.3rem;
+    text-decoration: none;
+    padding: 6px 5px;
+    width: 100%;
+    display: block;
+    margin: 5px 0;
+    border-radius: var(--border-radius);
+    color: var(--primary);
+    border: none;
+    outline: none;
+    background-color: var(--light-dark);
+    
+  }
+  
+  .btn:hover {
+    color: var(--primary);
+    background-color: var(--tertiary);
+    transform: translate(0, 0);
+    box-shadow: 2px 2px var(--dark);
+  }
+  
+  .btn-inline {
+    display: inline;
+  }
+  
+  .li-inline {
+    display: inline;
+  }
+  
+  .navbar{
+    display: flex;
+    background-color: rgb(94, 31, 31);
+    width: 100%;
+    position: fixed;
+
+}
+/*.navbar .li-inline{
     padding: 30px 0;
     width: 100%;
     align-items: center;
@@ -10,10 +115,129 @@
     z-index : 999;
     font-family: 'Zen Kurenaido', sans-serif;
     display: inline-block;
-}
-.max-width{
-    
-    max-width: 1300px;
-    padding: 0 80px;
-    margin: 0 auto;
-}
+}*/
+  .nav-item {
+    margin: 0 40px;
+  }
+  
+  .nav-item a {
+    color: var(--primary);
+  }
+  
+  .hero {
+    padding: 3% 4%;
+    background-color: var(--dark);
+    color: var(--primary);
+  }
+  
+  .hero p {
+    max-width: 75%;
+  }
+  .app-title {
+    font-family: 'IBM Plex Sans', sans-serif;
+    display: inline-block;
+    font-size: 30px;
+    padding: 0 10px;
+    background-color: var(--primary);
+    color: #2222;
+  }
+  
+  .app-title {
+    color: #1111;
+    margin: 15px;
+  }
+  
+  .list-group {
+    padding: 1%;
+  }
+  
+  .list-item {
+    margin-bottom: 10px;
+    padding: 1.5%;
+    border-radius: var(--border-radius);
+    background-color: var(--light-dark);
+    color: var(--primary);
+    text-decoration: none;
+  }
+  
+  .list-item:hover {
+    background-color: var(--dark);
+  }
+  
+  .footer a {
+    display: inline-block;
+    padding: 1em;
+    margin-bottom: .5em;
+    background-color: var(--dark);
+    color: var(--primary);
+    border-radius: var(--border-radius);
+    text-decoration: none;
+  }
+  
+  /* CARDS */
+  .card {
+    margin: 0 0 20px 0;
+    border: 3px solid var(--dark);
+    border-radius: var(--border-radius);
+  }
+  
+  .card-header {
+    color: var(--primary);
+    background-color: var(--dark);
+    padding: 1%;
+    border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0;
+  }
+  
+  .card-body {
+    padding: 1%;
+  }
+  
+  /* FORM */
+  .form-label,
+  .form-input,
+  .form-textarea {
+    display: block;
+  }
+  
+  .form-label {
+    font-size: 1.1rem;
+    margin: 0 0 0 5px;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 1%;
+    margin: 5px 0;
+    font-size: 1.2rem;
+    border: 2px solid var(--light-dark);
+    border-radius: var(--border-radius);
+  }
+  
+  .min-100-vh {
+    min-width: 100vh;
+  }
+  
+  /* FLEX CONTENT */
+  .flex-row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .flex-column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  .justify-space-between {
+    justify-content: space-between;
+  }
+  
+  .justify-center {
+    justify-content: center;
+  }
+  .col-auto {
+    flex-grow: 1;
+  }
+  
+  
