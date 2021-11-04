@@ -14,9 +14,9 @@
 :root {
     --primary: #FFF;
     --secondary: whitesmoke;
-    --tertiary: #788585;
-    --light-dark: rgba(146, 108, 108, 0.2);
-    --dark: rgb(133, 52, 52);
+    --tertiary: #122c2c;
+    --light-dark: rgb(90, 86, 86);
+    --dark: darkcyan;
     --border-radius: 5px;
   }
   
@@ -31,11 +31,11 @@
     font-family: 'Zen Kurenaido', sans-serif;
     color: var(--dark);
     line-height: 1.5;
-    font-size: 16px;
+    font-size: 20px;
   }
   
   h1, h2, h3, h4, h5, h6 {
-    font-weight: 700;
+    font-weight: 600;
     margin: 0;
     color: var(--dark);
     line-height: 1.25;
@@ -51,7 +51,8 @@
   }
 
   p {
-    font-size: 20px;
+    font-size: 25px;
+    font-weight: bold;
   }
   
   input {
@@ -132,13 +133,22 @@
   .app-title {
     font-family: 'IBM Plex Sans', sans-serif;
     display: inline-block;
-    font-size: 30px;
-    padding: 0 10px;
+    font-size: 40px;
+    padding: 0 20px;
     background-color: var(--primary);
     color: var(--dark);
-    margin: 15px;
+    margin: 40px;
   }
-  
+  #post-title {
+    font-size: large;
+    font-weight: bold;
+    color: darkslategray;
+  }
+  #post-body {
+    font-size: 20px;
+    color: darkslategray;
+
+  }
   .list-group {
     padding: 1%;
   }
@@ -156,7 +166,7 @@
     background-color: var(--dark);
   }*/
   
-  .footer a {
+  .footer {
     display: inline-block;
     padding: 1em;
     margin-bottom: .5em;
@@ -174,7 +184,7 @@
   }
   
   .card-header {
-    color: var(--primary);
+    color: #2222;
     background-color: var(--dark);
     padding: 1%;
     border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0;
@@ -182,7 +192,6 @@
   
   .card-body {
     padding: 1%;
-    
   }
   
   /* FORM */
@@ -199,7 +208,7 @@
     width: 100%;
     padding: 1%;
     margin: 5px 0;
-    font-size: 1.2rem;
+    font-size: 15px;
     border: 2px solid var(--light-dark);
     border-radius: var(--border-radius);
   }

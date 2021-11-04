@@ -25,8 +25,8 @@ const deleteClickHandler = async function() {
     method: 'DELETE'
   });
 
-  //document.location.replace('/dashboard');
-  document.location.reload();
+  document.location.replace('/dashboard');
+  //document.location.reload();
 };
 
 document
