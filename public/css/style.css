@@ -12,11 +12,11 @@
 }
 
 :root {
-    --primary: #ccdad1;
-    --secondary: #9caea9;
+    --primary: #FFF;
+    --secondary: whitesmoke;
     --tertiary: #788585;
-    --light-dark: #6f6866;
-    --dark: rgb(129, 31, 31);
+    --light-dark: rgba(146, 108, 108, 0.2);
+    --dark: rgb(133, 52, 52);
     --border-radius: 5px;
   }
   
@@ -25,24 +25,19 @@
   }
   
   body {
-    background-color: rgb(84, 167, 167);
+    /*background-color: rgb(170, 219, 219);*/
     margin: 0;
     padding: 0;
     font-family: 'Zen Kurenaido', sans-serif;
-    color: #2222;
+    color: var(--dark);
     line-height: 1.5;
     font-size: 16px;
   }
   
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+  h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     margin: 0;
-    color: #2222;
+    color: var(--dark);
     line-height: 1.25;
   }
   
@@ -54,13 +49,14 @@
     margin: 20px auto;
     width: 94%;
   }
+
   p {
     font-size: 20px;
   }
   
   input {
       width: 100%;
-      border: 1px solid #ccc;
+      border: 1px solid #ffcc;
       background: #FFF;
       margin: 0 0 5px;
       padding: 10px;
@@ -102,7 +98,7 @@
   
   .navbar{
     display: flex;
-    background-color: rgb(94, 31, 31);
+    background-color: var(--dark);
     width: 100%;
     position: fixed;
 
@@ -139,11 +135,7 @@
     font-size: 30px;
     padding: 0 10px;
     background-color: var(--primary);
-    color: #2222;
-  }
-  
-  .app-title {
-    color: #1111;
+    color: var(--dark);
     margin: 15px;
   }
   
@@ -160,9 +152,9 @@
     text-decoration: none;
   }
   
-  .list-item:hover {
+ /* .list-item:hover {
     background-color: var(--dark);
-  }
+  }*/
   
   .footer a {
     display: inline-block;
@@ -190,12 +182,11 @@
   
   .card-body {
     padding: 1%;
+    
   }
   
   /* FORM */
-  .form-label,
-  .form-input,
-  .form-textarea {
+  .form-label, .form-input, .form-textarea {
     display: block;
   }
   
@@ -212,7 +203,9 @@
     border: 2px solid var(--light-dark);
     border-radius: var(--border-radius);
   }
-  
+ /* #post-body {
+    color: #2222;
+  }*/
   .min-100-vh {
     min-width: 100vh;
   }
