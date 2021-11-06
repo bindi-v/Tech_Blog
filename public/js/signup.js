@@ -4,7 +4,7 @@ const signupFormHandler = async function(event) {
   const unEl = document.querySelector('#un-signup');
   const pwEl = document.querySelector('#pw-signup');
 
-  const response = await fetch(`/api/user`, {
+  const response = await fetch('/api/user', {
     method: 'POST',
     body: JSON.stringify({
       username: unEl.value,

@@ -135,7 +135,7 @@
     display: inline-block;
     font-size: 40px;
     padding: 0 20px;
-    background-color: var(--primary);
+    background-color: var(--dark);
     color: var(--dark);
     margin: 40px;
   }
@@ -147,8 +147,12 @@
   #post-body {
     font-size: 20px;
     color: darkslategray;
-
   }
+ .post-date {
+color: #fff;
+font-weight: bold;
+}
+ 
   .list-group {
     padding: 1%;
   }

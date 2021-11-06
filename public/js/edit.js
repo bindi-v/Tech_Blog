@@ -1,3 +1,5 @@
+//const { response } = require("express");
+
 const postId = document.querySelector('input[name="post-id"]').value;
 
 const editFormHandler = async function(event) {
@@ -16,7 +18,6 @@ const editFormHandler = async function(event) {
       'Content-Type': 'application/json'
     }
   });
-
   document.location.replace('/dashboard');
 };
 
@@ -24,9 +25,9 @@ const deleteClickHandler = async function() {
   await fetch(`/api/post/${postId}`, {
     method: 'DELETE'
   });
+  //document.location.replace('/dashboard');
+  document.location.reload('/dashboard');
 
-  document.location.replace('/dashboard');
-  //document.location.reload();
 };
 
 document
