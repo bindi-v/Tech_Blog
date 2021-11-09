@@ -96,6 +96,7 @@ Coding Boot Camp provides guidance
 ## Contact
 
 * GitHub :[bindi-v](https://github.com/bindi-v)
+
 * Email : bindi.vaghela@gmail.com
     
 ## Questions
@@ -104,7 +105,7 @@ If you have any questions, please reach out to my Github,
 
 ### Deployed Link 
 
-* [The URL of the functional, deployed application.]()
+* [The URL of the functional, deployed to Heroku application.](https://salty-oasis-80559.herokuapp.com/)
 
 * [The URL of the GitHub repository](https://github.com/bindi-v/Tech_Blog)
 
