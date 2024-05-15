@@ -2,7 +2,7 @@
 
 ## Task
 
-Our task this week is to build a CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well. We build this site completely from scratch and deploy it to Heroku. Our app will follow the MVC paradigm in its architectural structure, using Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication.
+Our task this week is to build a CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well. We build this site completely from scratch and deploy it to Render. Our app will follow the MVC paradigm in its architectural structure, using Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication.
 
 ## User Story
 
@@ -73,9 +73,18 @@ The following necessary dependencies must be installed to run the application.
 
   nodejs, express, mysql2, express-sessions, express-handlebars, dotenv, bcrypt, sequelize, connect-session-sequelize
 
+To install dependencies,
+```
+npm install or npm i
+```
+
 ## Usage
 
- Application can be invoked by node server.js command in terminal or you can use the deployed to heroku link.
+ Application can be invoked by 
+ ```
+ npm start or node server.js 
+ ```
+ command in terminal or you can use the deployed to `Render` link.
 
 ## Test
   
@@ -105,7 +114,7 @@ If you have any questions, please reach out to my Github,
 
 ### Deployed Link 
 
-* [The URL of the functional, deployed to Heroku application.](https://salty-oasis-80559.herokuapp.com/)
+* [The URL of the application, deployed to Render!](https://tech-blog-qf71.onrender.com)
 
 * [The URL of the GitHub repository](https://github.com/bindi-v/Tech_Blog)
 
